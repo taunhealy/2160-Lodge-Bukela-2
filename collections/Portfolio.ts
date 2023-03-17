@@ -21,6 +21,13 @@ const Portfolio: CollectionConfig = {
     ],
   },
   fields: [
+    
+    {
+      name: 'title',
+      label: 'Title',
+      type: 'text',
+      required: true,
+    },
     {
       name: 'alt',
       label: 'Alt Text',
