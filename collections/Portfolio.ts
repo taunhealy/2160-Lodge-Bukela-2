@@ -3,29 +3,29 @@ import { CollectionConfig } from 'payload/types';
 const Portfolio: CollectionConfig = {
   slug: 'portfolio',
   access: {
-    read: (): boolean => true, // Everyone can read Media
+    create: (): boolean => true, // Everyone can create Portfolio items
+    read: (): boolean => true, // Everyone can read Portfolio items
+    update: (): boolean => true, // Everyone can update Portfolio items
+    delete: (): boolean => true, // Everyone can delete Portfolio items
   },
-  upload: {
-    adminThumbnail: 'card',
-    imageSizes: [
-      {
-        name: 'card',
-        width: 640,
-        height: 480,
-      },
-      {
-        name: 'feature',
-        width: 1024,
-        height: 576,
-      },
-    ],
-  },
+
   fields: [
-    
     {
       name: 'title',
       label: 'Title',
       type: 'text',
+      required: true,
+    },
+    {
+      name: 'subtitle',
+      label: 'Venue Title',
+      type: 'text',
+      required: true,
+    },
+    {
+      name: 'backgroundImage',
+      type: 'upload',
+      relationTo: 'media',
       required: true,
     },
     {
