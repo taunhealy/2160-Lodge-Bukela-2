@@ -3,10 +3,10 @@ import { CollectionConfig } from 'payload/types';
 const Portfolio: CollectionConfig = {
   slug: 'portfolio',
   access: {
-    create: (): boolean => true, // Everyone can create Portfolio items
-    read: (): boolean => true, // Everyone can read Portfolio items
-    update: (): boolean => true, // Everyone can update Portfolio items
-    delete: (): boolean => true, // Everyone can delete Portfolio items
+    create: (): boolean => true,
+    read: (): boolean => true,
+    update: (): boolean => true,
+    delete: (): boolean => true,
   },
 
   fields: [
@@ -34,6 +34,21 @@ const Portfolio: CollectionConfig = {
       type: 'text',
       required: true,
     },
+    {
+      name: 'images',
+      label: 'Images',
+      type: 'upload',
+      relationTo: 'media',
+      required: true,
+      multiple: true,
+    },
+    {
+      name: 'favouriteImages',
+      label: 'Favorite Images',
+      type: 'relationship',
+      relationTo: 'media',
+      hasMany: true,
+      
   ],
 };
 
