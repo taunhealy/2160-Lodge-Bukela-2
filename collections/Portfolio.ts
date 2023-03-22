@@ -40,15 +40,7 @@ const Portfolio: CollectionConfig = {
       type: 'upload',
       relationTo: 'media',
       required: true,
-      multiple: true,
     },
-    {
-      name: 'favouriteImages',
-      label: 'Favorite Images',
-      type: 'relationship',
-      relationTo: 'media',
-      hasMany: true,
-      
   ],
 };
 
