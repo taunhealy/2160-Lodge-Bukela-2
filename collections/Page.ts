@@ -1,12 +1,12 @@
 import { CollectionConfig } from 'payload/types';
-import { MediaType } from './Media';
+import { Media } from './Media';
 import formatSlug from '../utilities/formatSlug';
 import { Image } from '../blocks/Image/Config';
 import { Type as ImageType } from '../blocks/Image/Component';
 import { CallToAction } from '../blocks/CallToAction/Config';
 import { Type as CallToActionType } from '../blocks/CallToAction/Component';
 import { Content } from '../blocks/Content/Config';
-import { Type as ContentType } from '../blocks/Content/Component';
+import { Type as ContentType } from '../blocks/Content/BlocksContent';
 
 
 export type Layout = CallToActionType | ContentType | ImageType
@@ -14,7 +14,7 @@ export type Layout = CallToActionType | ContentType | ImageType
 export type Type = {
   title: string
   slug: string
-  image?: MediaType
+  image?: Media
   layout: Layout[]
   meta: {
     title?: string

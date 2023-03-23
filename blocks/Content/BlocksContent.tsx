@@ -20,3 +20,5 @@ export const Component: React.FC<Type> = (props) => {
     </div>
   );
 };
+
+export default BlocksContent;

@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import Page from './collections/Page';
 import Media from './collections/Media';
 import Portfolio from './collections/Portfolio';
+import Posts from './collections/Posts';
 
 dotenv.config();
 
