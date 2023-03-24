@@ -22,7 +22,7 @@ const PostsList = () => {
       <h1>Posts List</h1>
       <ul>
         {posts.map((portfolio) => (
-          <li key={portfolio.title}>{portfolio.title}</li>
+          <li key={portfolio.title}>{portfolio.subtitle}</li>
         ))}
       </ul>
     </div>
