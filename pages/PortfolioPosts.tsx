@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import CoverBlockComponent from '../blocks/CoverBlock/CoverBlockComponent';
 
 const PostsList = () => {
   const [posts, setPosts] = useState([]);
@@ -21,7 +20,6 @@ const PostsList = () => {
   return (
     <div>
       <h1>Posts List</h1>
-      <CoverBlockComponent/>
       <ul>
         {posts.map((portfolio) => (
           <li key={portfolio.title}>{portfolio.subtitle}</li>
