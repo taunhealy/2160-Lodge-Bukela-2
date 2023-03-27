@@ -8,7 +8,7 @@ export type SizeDetails = {
 
 export type Size = 'card' | 'square' | 'portrait' | 'feature';
 
-export type Type = {
+export type MediaType = {
   filename: string
   alt: string
   mimeType: string

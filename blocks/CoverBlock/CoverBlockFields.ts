@@ -1,7 +1,6 @@
 // blocks/CoverBlock/fields.ts
-import { Block } from "payload/types";
-import { MediaType } from "../../collections/Media";
-import RichText from "../../components/RichText";
+import { Block } from 'payload/types';
+import { MediaType } from '../../collections/Media';
 
 export type CoverBlockType = {
   blockType: 'content';
@@ -22,7 +21,7 @@ const CoverBlock: Block = {
       label: 'Heading',
       type: 'richText',
       required: true,
-      },
+    },
     {
       name: 'feature',
       label: 'Cover Image',

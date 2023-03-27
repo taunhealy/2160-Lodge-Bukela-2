@@ -1,9 +1,10 @@
-// blocks/CoverBlock/CoverBlockcomponent.ts
-import React from "react";
+
 import Image from "next/image";
 import { Block } from 'payload/types';
-import { RichText } from "payload/rich-text";
+import RichText from "../../components/RichText";
 import { CoverBlockType } from "./CoverBlockFields";
+import React, { ReactElement } from 'react';
+
 
 const CoverBlockComponent: React.FC<CoverBlockType> = (props) => {
   const { content, image } = props;
@@ -32,6 +33,6 @@ const CoverBlockComponent: React.FC<CoverBlockType> = (props) => {
       </div>
     </div>
   );
-};
+};`
 
 export default CoverBlockComponent;
