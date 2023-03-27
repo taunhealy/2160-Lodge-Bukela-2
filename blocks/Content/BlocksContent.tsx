@@ -1,4 +1,4 @@
-/*
+
 import React from 'react';
 import RichText from '../../components/RichText';
 import classes from './index.module.css';
@@ -23,4 +23,3 @@ export const Component: React.FC<Type> = (props) => {
 };
 
 export default BlocksContent;
-/*
