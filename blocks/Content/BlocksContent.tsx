@@ -9,7 +9,7 @@ export type Type = {
   content: unknown
 }
 
-export const Component: React.FC<Type> = (props) => {
+export const BlocksContent: React.FC<Type> = (props) => {
   const { content } = props;
 
   return (
