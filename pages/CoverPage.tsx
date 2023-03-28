@@ -8,7 +8,7 @@ const getServerSideProps = async () => {
   return { props: { blocks } };
 };
 
-const CoverBlockComponent = (props) => {
+const CoverPage = (props) => {
   const { blocks } = props;
   return (
     <CoverBlockComponent />
