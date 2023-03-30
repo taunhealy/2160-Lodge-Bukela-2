@@ -8,6 +8,8 @@ import { Type as CallToActionType } from '../blocks/CallToAction/Component';
 import { Content } from '../blocks/Content/Config';
 import { Type as ContentType } from '../blocks/Content/BlocksContent';
 import CoverBlock from '../blocks/CoverBlock/CoverBlockFields';
+import PortfolioHeroFields from '../blocks/PortfolioHero/PortfolioHeroFields';
+import PortfolioHeroBlock from '../blocks/PortfolioHero/PortfolioHeroFields';
 
 
 export type Layout = CallToActionType | ContentType | ImageType
@@ -54,7 +56,8 @@ export const Page: CollectionConfig = {
         CallToAction,
         Content,
         Image,
-        CoverBlock
+        CoverBlock,
+        PortfolioHeroBlock,
       ],
     },
     {
