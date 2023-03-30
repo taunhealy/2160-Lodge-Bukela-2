@@ -1,3 +1,5 @@
+// CoverBlockComponent.ts
+
 import Image from 'next/image';
 import { CoverBlockType } from './CoverBlockFields';
 

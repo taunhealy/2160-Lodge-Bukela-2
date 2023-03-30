@@ -3,7 +3,9 @@ import dotenv from 'dotenv';
 import Page from './collections/Page';
 import Media from './collections/Media';
 import Portfolio from './collections/Portfolio';
-import Posts from './collections/Posts';
+import MegaMenu from './globals/MegaMenu';
+import SocialMedia from './globals/SocialMedia';
+import Footer from './globals/Footer';
 
 dotenv.config();
 
@@ -13,5 +15,10 @@ export default buildConfig({
     Page,
     Media,
     Portfolio,
+  ],
+  globals: [
+    MegaMenu,
+    SocialMedia,
+    Footer,
   ],
 });
