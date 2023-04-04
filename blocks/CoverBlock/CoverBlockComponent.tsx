@@ -6,7 +6,7 @@ import RichText from '../../components/RichText';
 import React from 'react';
 
 export type CoverBlockType = {
-  blockType: 'content',
+  blockType: 'cover',
   blockName?: string,
   content: unknown,
   image: MediaType,
