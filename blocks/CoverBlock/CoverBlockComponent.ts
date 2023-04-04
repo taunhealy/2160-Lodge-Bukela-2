@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { CoverBlockType } from './CoverBlockFields';
+import RichText from '../../components/RichText';
 
 const CoverBlockComponent: React.FC<CoverBlockType> = (props) => {
   const { content, image } = props;
