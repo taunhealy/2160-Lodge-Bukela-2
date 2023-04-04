@@ -6,9 +6,8 @@ import { Image } from './Image/Config';
 import { Component as image } from './Image/Component';
 
 // My components
-
-import CoverBlockComponent, { CoverBlockType } from './CoverBlock/CoverBlockComponent';
-import CoverBlock from './CoverBlock/CoverBlockFields';
+import { CoverBlock } from './CoverBlock/Config';
+import { Component as cover } from './CoverBlock/Component';
 
 export const collections = {
   CallToAction,
@@ -21,6 +20,5 @@ export const components = {
   cta,
   content,
   image,
-  CoverBlockType: CoverBlockComponent ,
- 
+  cover,
 };
