@@ -2,9 +2,7 @@
 import { Block } from 'payload/types';
 import { MediaType } from '../../collections/Media';
 
-
-
-const CoverBlock: Block = {
+export const CoverBlock: Block = {
   slug: 'cover',
   labels: {
     singular: 'Cover',
@@ -26,5 +24,3 @@ const CoverBlock: Block = {
     },
   ],
 };
-
-export default CoverBlock;
