@@ -1,4 +1,6 @@
 import { Block } from 'payload/types';
+import Portfolio from '../../collections/Portfolio';
+
 
 const PortfolioHeroBlock: Block = {
   slug: 'portfolio-hero',
@@ -16,7 +18,7 @@ const PortfolioHeroBlock: Block = {
           name: 'itemId',
           label: 'Item',
           type: 'relationship',
-          relationTo: 'Portfolio',
+          relationTo: Portfolio.slug,
           required: true,
         },
         {

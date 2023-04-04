@@ -2,12 +2,7 @@
 import { Block } from 'payload/types';
 import { MediaType } from '../../collections/Media';
 
-export type CoverBlockType = {
-  blockType: 'content',
-  blockName?: string,
-  content: unknown,
-  image: MediaType,
-};
+
 
 const CoverBlock: Block = {
   slug: 'cover',
