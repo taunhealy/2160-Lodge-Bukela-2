@@ -1,6 +1,5 @@
 // blocks/CoverBlock/fields.ts
 import { Block } from 'payload/types';
-import { MediaType } from '../../collections/Media';
 
 export const CoverBlock: Block = {
   slug: 'cover',
