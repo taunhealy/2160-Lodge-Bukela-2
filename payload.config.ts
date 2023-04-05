@@ -8,6 +8,14 @@ import Footer from './globals/Footer';
 
 dotenv.config();
 
+module.exports = {
+  // other Payload config options...
+  csrf: [
+    'http://localhost:3000', // add your domain here
+    'https://yourdomain.com' // you can add multiple domains
+  ]
+}
+
 export default buildConfig({
   serverURL: process.env.PAYLOAD_PUBLIC_SERVER_URL,
   collections: [

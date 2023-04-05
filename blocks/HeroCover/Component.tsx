@@ -20,10 +20,9 @@ const CoverBlockComponent: React.FC<Type> = (props) => {
         alt={image.alt}
         width={image.width}
         height={image.height}
-        className="object-cover w-full h-full"
       />
-      <RichText content={content}
-      className="text-4xl font-bold"/>
+      <RichText content={content} 
+      className="text-4xl font-bold" />
     </div>
   );
 };
