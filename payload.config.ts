@@ -2,7 +2,6 @@ import { buildConfig } from 'payload/config';
 import dotenv from 'dotenv';
 import Page from './collections/Page';
 import Media from './collections/Media';
-import Portfolio from './collections/Portfolio';
 import MegaMenu from './globals/MegaMenu';
 import SocialMedia from './globals/SocialMedia';
 import Footer from './globals/Footer';
@@ -14,7 +13,6 @@ export default buildConfig({
   collections: [
     Page,
     Media,
-    Portfolio,
   ],
   globals: [
     MegaMenu,

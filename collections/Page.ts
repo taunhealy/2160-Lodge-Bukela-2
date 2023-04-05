@@ -3,13 +3,11 @@ import { Media } from './Media';
 import formatSlug from '../utilities/formatSlug';
 import { Image } from '../blocks/Image/Config';
 import { Type as ImageType } from '../blocks/Image/Component';
-import { CallToAction } from '../blocks/CallToAction/Config';
-import { Type as CallToActionType } from '../blocks/CallToAction/Component';
 import { Content } from '../blocks/Content/Config';
 import { Type as ContentType } from '../blocks/Content/BlocksContent';
-import CoverBlock from '../blocks/CoverBlock/CoverBlockFields';
-import PortfolioHeroBlock from '../blocks/PortfolioHero/PortfolioHeroFields';
-
+import { CoverBlock } from '../blocks/HeroCover/Config';
+import { CoverH2 } from '../blocks/CoverH2/Config';
+import { CallToAction } from '../components/CallToAction/Config';
 
 export type Layout = CallToActionType | ContentType | ImageType
 
@@ -56,7 +54,7 @@ export const Page: CollectionConfig = {
         Content,
         Image,
         CoverBlock,
-        PortfolioHeroBlock,
+        CoverH2,
       ],
     },
     {

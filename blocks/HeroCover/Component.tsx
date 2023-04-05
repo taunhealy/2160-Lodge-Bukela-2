@@ -14,14 +14,16 @@ const CoverBlockComponent: React.FC<Type> = (props) => {
   const { content, image } = props;
 
   return (
-    <div>
+    <div className="relative w-full h-screen">
       <Image
         src={`${process.env.NEXT_PUBLIC_SERVER_URL}/media/${image.filename}`}
         alt={image.alt}
         width={image.width}
         height={image.height}
+        className="object-cover w-full h-full"
       />
-      <RichText content={content} />
+      <RichText content={content}
+      className="text-4xl font-bold"/>
     </div>
   );
 };
