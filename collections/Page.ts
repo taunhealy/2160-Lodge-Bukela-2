@@ -7,7 +7,7 @@ import { Content } from '../blocks/Content/Config';
 import { Type as ContentType } from '../blocks/Content/BlocksContent';
 import { CoverBlock } from '../blocks/HeroCover/Config';
 import { CoverH2 } from '../blocks/CoverH2/Config';
-import { CallToAction } from '../components/CallToAction/Config';
+import { CallToAction } from '../blocks/CallToAction/Config';
 
 export type Layout = CallToActionType | ContentType | ImageType
 
