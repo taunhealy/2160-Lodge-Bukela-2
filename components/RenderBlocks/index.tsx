@@ -14,8 +14,8 @@ const RenderBlocks: React.FC<Props> = ({ layout, className }) => (
     className,
   ].filter(Boolean).join(' ')}
   >
-    {layout.map((block, i) => {
-      const Block: React.FC<any> = components[block.blockType];
+      {layout.map((block, i) => {
+        const Block: React.FC<any> = components[block.blockType];
 
       if (Block) {
         return (
